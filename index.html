@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- enter point -->
+    <div id="root">
+      <!-- components goes here -->
+    </div>
+
+    <!-- import React CDN  -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <!-- components import order, from son components to father components -->
+    <!-- 编译时，从子组件到父组件进行拼接 -->
+    <!-- 执行时，从父组件到子组件进行执行 -->
+    <script src="./utils/useState.js"></script>
+    <script src="./components/LikeButton.js"></script>
+    <script src="./App.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
